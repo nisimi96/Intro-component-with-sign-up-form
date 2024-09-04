@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro component with sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="text-container">
+        <h1 class="main-title">Learn to code by watching others</h1>
+        <p class="main-text">See how experienced developers solve problems in real-time.
+             Watching scripted tutorials is great,
+              but understanding how developers think is invaluable. </p>
+    </div>
+    
+    <div class="form-side-container">
+        <div class="form-title-container">
+            <p class="form-title-text">Try it free 7 days <span class="span-title">then $20/mo. thereafter</span></p>
+        </div>
+
+        <form class="form" action="https://formspree.io/f/mldrvjyr" method="post">
+            <div class="input-container">
+                <input type="text" id="first-name" class="input" name="first-name" placeholder="First Name">
+                <img src="rss/icon-error.svg" alt="" class="error-icon">
+                <small class="warning-message">First Name cannot be empty.</small>
+            </div>
+            <div class="input-container">
+                <input type="text" id="last-name" class="input" name="last-name" placeholder="Last Name">
+                <img src="rss/icon-error.svg" alt="" class="error-icon">
+                <small class="warning-message">Last Name cannot be empty.</small>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" class="input" name="email" placeholder="Email Address">
+                <img src="rss/icon-error.svg" alt="" class="error-icon">
+                <small class="warning-message">Looks like this is not an email.</small>
+            </div>
+            <div class="input-container">
+                <input type="password" id="pw" class="input" name="pw" placeholder="Password">
+                <img src="rss/icon-error.svg" alt="" class="error-icon">
+                <small class="warning-message">Password cannot be empty.</small>
+            </div>
+
+            <button type="submit">CLAIM YOUR FREE TRIAL</button>
+            <p class="term">By clicking the button, you are agreeing to our <a class="term-span" href="#">Terms and Services</a></p>
+        </form>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
